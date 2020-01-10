@@ -1,4 +1,4 @@
-//https://doc.rust-lang.org/book/title-page.html
+ //https://doc.rust-lang.org/book/title-page.html
 
 mod server_threading;
 
@@ -34,6 +34,7 @@ fn handle_connection(mut stream: impl Read + Write) -> Result<(), std::io::Error
     let _amount = stream.read(&mut buffer)?;
 
     let get = b"GET / HTTP/1.1\r\n";
+    
     let now: DateTime<Utc> = Utc::now();
 
     if buffer.starts_with(get) {
