@@ -1,7 +1,7 @@
 # waiter-rs  
 
 #### An HTTP handler and web server made in Rust.
-#### (This is a personal project made for fun that is super minimal based on the rust book, I don't expect anyone to fork it just yet).
+#### (This is a personal project made for fun and it is super minimal).
 
 ---
 
